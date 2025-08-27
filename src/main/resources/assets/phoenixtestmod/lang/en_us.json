@@ -1,0 +1,13 @@
+{
+  "item.phoenixtestmod.bismuth": "Bismuth",
+  "item.phoenixtestmod.raw_bismuth": "Raw Bismuth",
+  "item.phoenixtestmod.chisel": "Chisel",
+
+  "block.phoenixtestmod.bismuth_block": "Block of Bismuth",
+  "block.phoenixtestmod.bismuth_ore": "Bismuth Ore",
+  "block.phoenixtestmod.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
+  "block.phoenixtestmod.magic_block": "Magic Block",
+
+  "creativetab.phoenixtestmod.bismuth_items": "Bismuth Items",
+  "creativetab.phoenixtestmod.bismuth_blocks": "Bismuth Blocks"
+}
