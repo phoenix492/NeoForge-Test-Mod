@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:coal",
+    "phoenixtestmod:bismuth",
+    "phoenixtestmod:raw_bismuth"
+  ]
+}

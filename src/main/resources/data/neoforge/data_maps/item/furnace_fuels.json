@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": {
+    "phoenixtestmod:starlight_ashes": {
+      "burn_time": 1200
+    }
+  }
+}
