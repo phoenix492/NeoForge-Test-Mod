@@ -55,7 +55,7 @@ public class MagicBlock extends Block {
                 MAGIC_MAP_TAGS.forEach((k, v) -> {
                     if (itemEntity.getItem().is(k)) {
                         itemEntity.setItem(new ItemStack(BuiltInRegistries.ITEM.get(v), itemEntity.getItem().getCount()));
-                    };
+                    }
                 });
             }
         }

@@ -25,7 +25,6 @@ public class BismuthLampBlock extends Block {
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
         if (!level.isClientSide()) {
-            boolean currentState = state.getValue(LAMP_ON);
             if (state.getValue(LAMP_ON)) {
                 level.setBlockAndUpdate(pos, state.setValue(LAMP_ON, false));
                 level.playSound(null, pos, SoundEvents.STONE_BUTTON_CLICK_OFF, SoundSource.BLOCKS);
