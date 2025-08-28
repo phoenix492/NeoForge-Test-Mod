@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lamp_on=false": {
+      "model": "phoenixtestmod:block/bismuth_lamp_off"
+    },
+    "lamp_on=true": {
+      "model": "phoenixtestmod:block/bismuth_lamp_on"
+    }
+  }
+}

@@ -18,7 +18,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
-import net.phoenix492.testmod.util.ReusableTagKeys;
+import net.phoenix492.testmod.util.ModTagKeys;
 
 import java.util.List;
 import java.util.Map;
@@ -35,7 +35,7 @@ public class MagicBlock extends Block {
             );
     private static final Map<TagKey<Item>, ResourceLocation> MAGIC_MAP_TAGS =
             Map.of(
-                    ReusableTagKeys.Items.TRANSFORMABLE_INTO_DIAMOND, ResourceLocation.parse("minecraft:diamond")
+                    ModTagKeys.Items.TRANSFORMABLE_INTO_DIAMOND, ResourceLocation.parse("minecraft:diamond")
             );
 
     @Override

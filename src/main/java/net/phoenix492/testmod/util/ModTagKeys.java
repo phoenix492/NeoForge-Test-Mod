@@ -8,7 +8,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.phoenix492.testmod.TestMod;
 
-public class ReusableTagKeys {
+public class ModTagKeys {
     public static class Blocks {
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(TestMod.MODID, name));

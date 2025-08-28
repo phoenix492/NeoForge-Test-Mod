@@ -1,0 +1,10 @@
+{
+  "values": {
+    "phoenixtestmod:frostfire_ice": {
+      "burn_time": 600
+    },
+    "phoenixtestmod:starlight_ashes": {
+      "burn_time": 1200
+    }
+  }
+}

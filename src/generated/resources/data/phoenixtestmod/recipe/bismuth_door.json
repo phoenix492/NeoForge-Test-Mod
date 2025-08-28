@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "bismuth",
+  "key": {
+    "#": {
+      "item": "phoenixtestmod:bismuth"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "phoenixtestmod:bismuth_door"
+  }
+}

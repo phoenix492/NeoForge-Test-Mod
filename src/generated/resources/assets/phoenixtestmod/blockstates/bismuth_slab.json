@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "phoenixtestmod:block/bismuth_slab"
+    },
+    "type=double": {
+      "model": "phoenixtestmod:block/bismuth_block"
+    },
+    "type=top": {
+      "model": "phoenixtestmod:block/bismuth_slab_top"
+    }
+  }
+}
