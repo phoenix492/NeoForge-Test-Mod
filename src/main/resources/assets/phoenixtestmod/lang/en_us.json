@@ -18,6 +18,10 @@
   "item.phoenixtestmod.bismuth_leggings": "Bismuth Leggings",
   "item.phoenixtestmod.bismuth_boots": "Bismuth Boots",
 
+  "item.phoenixtestmod.bismuth_horse_armor": "Bismuth Horse Armor",
+
+  "item.phoenixtestmod.phoenix_armor_trim_smithing_template": "Bismuth Horse Armor",
+
   "block.phoenixtestmod.bismuth_block": "Block of Bismuth",
   "block.phoenixtestmod.bismuth_ore": "Bismuth Ore",
   "block.phoenixtestmod.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
@@ -39,5 +43,8 @@
   "tooltip.phoenixtestmod.magic_block.tooltip": "This block is §amagic§r! It turns Bismuth thrown onto it into Diamonds!",
   "tooltip.tutorialmod.chisel.shift_down": "This item chisels blocks into bricks.",
   "tooltip.tutorialmod.chisel": "Press Shift for more information.",
-  "tooltip.phoenixtestmod.radish_tooltip": "Chance of Health Boost on consumption!"
+  "tooltip.phoenixtestmod.radish_tooltip": "Chance of Health Boost on consumption!",
+
+  "trim_pattern.phoenixtestmod.phoenix": "Phoenix Armor Trim",
+  "trim_material.phoenixtestmod.bismuth": "Bismuth Material"
 }

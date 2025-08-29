@@ -1,0 +1,8 @@
+{
+  "asset_id": "phoenixtestmod:phoenix",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.phoenixtestmod.phoenix"
+  },
+  "template_item": "phoenixtestmod:phoenix_armor_trim_smithing_template"
+}

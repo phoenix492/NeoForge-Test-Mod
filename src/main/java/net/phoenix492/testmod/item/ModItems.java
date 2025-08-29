@@ -2,6 +2,7 @@ package net.phoenix492.testmod.item;
 
 
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -10,6 +11,7 @@ import net.phoenix492.testmod.TestMod;
 import net.phoenix492.testmod.block.custom.FuelItem;
 import net.phoenix492.testmod.item.custom.ChiselItem;
 import net.phoenix492.testmod.item.custom.HammerItem;
+import net.phoenix492.testmod.item.custom.ModArmorItem;
 import net.phoenix492.testmod.item.custom.ModFoodProperties;
 
 import java.util.List;
@@ -92,7 +94,7 @@ public class ModItems {
 
     public static final DeferredItem<ArmorItem> BISMUTH_CHESTPLATE = ITEMS.register(
         "bismuth_chestplate",
-        () -> new ArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19)))
+        () -> new ModArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19)))
     );
 
     public static final DeferredItem<ArmorItem> BISMUTH_LEGGINGS = ITEMS.register(
@@ -105,6 +107,15 @@ public class ModItems {
         () -> new ArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19)))
     );
 
+    public static final DeferredItem<Item> BISMUTH_HORSE_ARMOR = ITEMS.register(
+        "bismuth_horse_armor",
+        () -> new AnimalArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN, false, new Item.Properties().stacksTo(1))
+    );
+
+    public static final DeferredItem<Item> PHOENIX_SMITHING_TEMPLATE = ITEMS.register(
+        "phoenix_armor_trim_smithing_template",
+        () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(TestMod.MODID, "phoenix"))
+    );
 
 
     public static void register(IEventBus eventBus) {

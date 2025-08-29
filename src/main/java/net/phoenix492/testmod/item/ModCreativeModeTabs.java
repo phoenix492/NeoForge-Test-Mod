@@ -37,6 +37,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BISMUTH_CHESTPLATE);
                         output.accept(ModItems.BISMUTH_LEGGINGS);
                         output.accept(ModItems.BISMUTH_BOOTS);
+                        output.accept(ModItems.BISMUTH_HORSE_ARMOR);
+                        output.accept(ModItems.PHOENIX_SMITHING_TEMPLATE);
 
                     }).build()
     );

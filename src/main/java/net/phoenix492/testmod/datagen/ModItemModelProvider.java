@@ -33,6 +33,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.BISMUTH_LEGGINGS.get());
         basicItem(ModItems.BISMUTH_BOOTS.get());
 
+        basicItem(ModItems.PHOENIX_SMITHING_TEMPLATE.get());
+
+        basicItem(ModItems.BISMUTH_HORSE_ARMOR.get());
+
         buttonItem(ModBlocks.BISMUTH_BUTTON, ModBlocks.BISMUTH_BLOCK);
         fenceItem(ModBlocks.BISMUTH_FENCE, ModBlocks.BISMUTH_BLOCK);
         wallItem(ModBlocks.BISMUTH_WALL, ModBlocks.BISMUTH_BLOCK);

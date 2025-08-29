@@ -20,6 +20,10 @@ public class HammerItem extends DiggerItem {
     public static List<BlockPos> getBlocksToDestroy(int range, BlockPos initialBlockPos, ServerPlayer player) {
         List<BlockPos> positions = new ArrayList<>();
 
+        if (player.isSteppingCarefully()) {
+            return positions;
+        }
+
         BlockHitResult traceResult = player.level().clip(
             new ClipContext(
                 player.getEyePosition(1f),

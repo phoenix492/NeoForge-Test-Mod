@@ -3,12 +3,14 @@ package net.phoenix492.testmod.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 import net.phoenix492.testmod.TestMod;
 import net.phoenix492.testmod.block.ModBlocks;
 import net.phoenix492.testmod.item.ModItems;
+import org.apache.logging.log4j.core.config.plugins.util.ResolverUtil;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -75,6 +77,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(recipeOutput, BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH.get(), 0.25f, 200, "bismuth");
         oreBlasting(recipeOutput, BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH.get(), 0.25f, 100, "bismuth");
+
+        trimSmithing(recipeOutput, ModItems.PHOENIX_SMITHING_TEMPLATE.get(), ResourceLocation.fromNamespaceAndPath(TestMod.MODID, "phoenix"));
 
 
         super.buildRecipes(recipeOutput);

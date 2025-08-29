@@ -77,5 +77,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         tag(ItemTags.FOOT_ARMOR)
             .add(ModItems.BISMUTH_BOOTS.get());
+
+        tag(ItemTags.TRIM_MATERIALS)
+            .add(ModItems.BISMUTH.get());
+
+        tag(ItemTags.TRIM_TEMPLATES)
+            .add(ModItems.PHOENIX_SMITHING_TEMPLATE.get());
     }
 }
