@@ -50,5 +50,32 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         tag(ItemTags.TRAPDOORS)
             .add(ModBlocks.BISMUTH_TRAPDOOR.asItem());
+
+        tag(ItemTags.SWORDS)
+            .add(ModItems.BISMUTH_SWORD.get());
+
+        tag(ItemTags.PICKAXES)
+            .add(ModItems.BISMUTH_PICKAXE.get());
+
+        tag(ItemTags.SHOVELS)
+            .add(ModItems.BISMUTH_SHOVEL.get());
+
+        tag(ItemTags.AXES)
+            .add(ModItems.BISMUTH_AXE.get());
+
+        tag(ItemTags.HOES)
+            .add(ModItems.BISMUTH_HOE.get());
+
+        tag(ItemTags.HEAD_ARMOR)
+            .add(ModItems.BISMUTH_HELMET.get());
+
+        tag(ItemTags.CHEST_ARMOR)
+            .add(ModItems.BISMUTH_CHESTPLATE.get());
+
+        tag(ItemTags.LEG_ARMOR)
+            .add(ModItems.BISMUTH_LEGGINGS.get());
+
+        tag(ItemTags.FOOT_ARMOR)
+            .add(ModItems.BISMUTH_BOOTS.get());
     }
 }

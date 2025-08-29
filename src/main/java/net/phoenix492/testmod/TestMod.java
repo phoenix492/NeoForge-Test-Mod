@@ -1,6 +1,7 @@
 package net.phoenix492.testmod;
 
 import net.phoenix492.testmod.block.ModBlocks;
+import net.phoenix492.testmod.component.ModDataComponents;
 import net.phoenix492.testmod.item.ModCreativeModeTabs;
 import net.phoenix492.testmod.item.ModItems;
 import org.slf4j.Logger;
@@ -46,6 +47,9 @@ public class TestMod {
         ModItems.register(modEventBus);
         // Register Blocks
         ModBlocks.register(modEventBus);
+
+        // Register Data Components
+        ModDataComponents.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

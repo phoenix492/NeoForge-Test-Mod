@@ -15,6 +15,7 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.phoenix492.testmod.component.ModDataComponents;
 
 import java.util.List;
 import java.util.Map;
@@ -47,6 +48,8 @@ public class ChiselItem extends Item {
                         item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
                 level.playSound(null, context.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+
+                context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
             }
 
         }
@@ -60,6 +63,10 @@ public class ChiselItem extends Item {
         tooltipComponents.add(Component.translatable("tooltip.tutorialmod.chisel.shift_down"));
         } else {
             tooltipComponents.add(Component.translatable("tooltip.tutorialmod.chisel"));
+        }
+
+        if (stack.get(ModDataComponents.COORDINATES) != null) {
+            tooltipComponents.add(Component.literal("Last Block changed at " + stack.get(ModDataComponents.COORDINATES).getX() + " " + stack.get(ModDataComponents.COORDINATES).getY() + " " + stack.get(ModDataComponents.COORDINATES).getZ()));
         }
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }

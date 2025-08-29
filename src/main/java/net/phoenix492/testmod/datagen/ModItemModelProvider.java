@@ -1,6 +1,8 @@
 package net.phoenix492.testmod.datagen;
 
+import net.minecraft.client.renderer.block.model.ItemModelGenerator;
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.models.ItemModelGenerators;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
@@ -26,9 +28,21 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.CHISEL.get());
         basicItem(ModBlocks.BISMUTH_DOOR.asItem());
 
+        basicItem(ModItems.BISMUTH_HELMET.get());
+        basicItem(ModItems.BISMUTH_CHESTPLATE.get());
+        basicItem(ModItems.BISMUTH_LEGGINGS.get());
+        basicItem(ModItems.BISMUTH_BOOTS.get());
+
         buttonItem(ModBlocks.BISMUTH_BUTTON, ModBlocks.BISMUTH_BLOCK);
         fenceItem(ModBlocks.BISMUTH_FENCE, ModBlocks.BISMUTH_BLOCK);
         wallItem(ModBlocks.BISMUTH_WALL, ModBlocks.BISMUTH_BLOCK);
+
+        handheldItem(ModItems.BISMUTH_SWORD.get());
+        handheldItem(ModItems.BISMUTH_PICKAXE.get());
+        handheldItem(ModItems.BISMUTH_SHOVEL.get());
+        handheldItem(ModItems.BISMUTH_HOE.get());
+        handheldItem(ModItems.BISMUTH_AXE.get());
+        handheldItem(ModItems.BISMUTH_HAMMER.get());
 
     }
 
