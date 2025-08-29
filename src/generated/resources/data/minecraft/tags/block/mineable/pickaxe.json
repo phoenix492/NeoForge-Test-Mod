@@ -3,6 +3,16 @@
     "phoenixtestmod:bismuth_block",
     "phoenixtestmod:bismuth_ore",
     "phoenixtestmod:bismuth_deepslate_ore",
-    "phoenixtestmod:magic_block"
+    "phoenixtestmod:magic_block",
+    "phoenixtestmod:bismuth_fence",
+    "phoenixtestmod:bismuth_lamp",
+    "phoenixtestmod:bismuth_wall",
+    "phoenixtestmod:bismuth_fence_gate",
+    "phoenixtestmod:bismuth_stairs",
+    "phoenixtestmod:bismuth_slab",
+    "phoenixtestmod:bismuth_button",
+    "phoenixtestmod:bismuth_door",
+    "phoenixtestmod:bismuth_trapdoor",
+    "phoenixtestmod:bismuth_pressure_plate"
   ]
 }

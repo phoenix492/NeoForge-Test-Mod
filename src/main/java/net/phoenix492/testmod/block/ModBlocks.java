@@ -81,7 +81,7 @@ public class ModBlocks {
             BlockSetType.STONE,
                 BlockBehaviour.Properties.of()
                     .strength(1f)
-                    .requiresCorrectToolForDrops()
+                    .noCollission()
         )
     );
     public static final DeferredBlock<ButtonBlock> BISMUTH_BUTTON = registerBlock(
@@ -91,7 +91,6 @@ public class ModBlocks {
                 20,
                 BlockBehaviour.Properties.of()
                     .strength(1f)
-                    .requiresCorrectToolForDrops()
                     .noCollission()
         )
     );
@@ -144,6 +143,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> BISMUTH_LAMP = registerBlock(
         "bismuth_lamp",
         () -> new BismuthLampBlock(BlockBehaviour.Properties.of()
+            .strength(1f)
             .requiresCorrectToolForDrops()
             .lightLevel(state -> state.getValue(BismuthLampBlock.LAMP_ON) ? 15 : 0)
         )
