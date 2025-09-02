@@ -1,0 +1,6 @@
+{
+  "parent": "phoenixtestmod:item/kaupen_bow",
+  "textures": {
+    "layer0": "phoenixtestmod:item/kaupen_bow_pulling_1"
+  }
+}

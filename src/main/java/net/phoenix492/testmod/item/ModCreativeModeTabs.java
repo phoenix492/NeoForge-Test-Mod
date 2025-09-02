@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_BISMUTH);
                         output.accept(ModItems.CHISEL);
                         output.accept(ModItems.RADISH);
+                        output.accept(ModItems.RADISH_SEEDS);
                         output.accept(ModItems.STARLIGHT_ASHES);
                         output.accept(ModItems.FROSTFIRE_ICE);
                         output.accept(ModItems.BISMUTH_SWORD);
@@ -39,7 +40,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BISMUTH_BOOTS);
                         output.accept(ModItems.BISMUTH_HORSE_ARMOR);
                         output.accept(ModItems.PHOENIX_SMITHING_TEMPLATE);
-
+                        output.accept(ModItems.KAUPEN_BOW);
+                        output.accept(ModItems.BAR_BRAWL_MUSIC_DISC);
+                        output.accept(ModItems.GOJI_BERRIES);
                     }).build()
     );
     public static final Supplier<CreativeModeTab> BISMUTH_BLOCK_TAB = CREATIVE_MODE_TAB.register(
@@ -52,6 +55,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BISMUTH_BLOCK);
                         output.accept(ModBlocks.BISMUTH_ORE);
                         output.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE);
+                        output.accept(ModBlocks.BISMUTH_NETHER_ORE);
+                        output.accept(ModBlocks.BISMUTH_END_ORE);
                         output.accept(ModBlocks.MAGIC_BLOCK);
                         output.accept(ModBlocks.BISMUTH_STAIRS);
                         output.accept(ModBlocks.BISMUTH_SLAB);
@@ -63,6 +68,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BISMUTH_DOOR);
                         output.accept(ModBlocks.BISMUTH_TRAPDOOR);
                         output.accept(ModBlocks.BISMUTH_LAMP);
+                        output.accept(ModBlocks.BLOODWOOD_LOG);
+                        output.accept(ModBlocks.BLOODWOOD_WOOD);
+                        output.accept(ModBlocks.STRIPPED_BLOODWOOD_LOG);
+                        output.accept(ModBlocks.STRIPPED_BLOODWOOD_WOOD);
+                        output.accept(ModBlocks.BLOODWOOD_PLANKS);
+                        output.accept(ModBlocks.BLOODWOOD_SAPLING);
+                        output.accept(ModBlocks.BLOODWOOD_LEAVES);
+
                     }).build()
     );
 

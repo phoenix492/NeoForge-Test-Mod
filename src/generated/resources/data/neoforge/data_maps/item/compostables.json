@@ -1,0 +1,10 @@
+{
+  "values": {
+    "phoenixtestmod:radish": {
+      "chance": 0.45
+    },
+    "phoenixtestmod:radish_seeds": {
+      "chance": 0.25
+    }
+  }
+}

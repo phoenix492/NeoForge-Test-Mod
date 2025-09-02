@@ -11,4 +11,9 @@ public class ModFoodProperties {
             .saturationModifier(0.25f)
             .effect( ()-> new MobEffectInstance(MobEffects.HEALTH_BOOST, 400), 0.35f)
             .build();
+    public static final FoodProperties GOJI_BERRIES = new FoodProperties.Builder()
+            .fast()
+            .nutrition(2)
+            .saturationModifier(0.15f)
+            .build();
 }

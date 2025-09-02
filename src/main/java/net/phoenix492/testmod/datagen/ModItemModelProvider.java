@@ -1,8 +1,6 @@
 package net.phoenix492.testmod.datagen;
 
-import net.minecraft.client.renderer.block.model.ItemModelGenerator;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.models.ItemModelGenerators;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
@@ -23,10 +21,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RAW_BISMUTH.get());
         basicItem(ModItems.BISMUTH.get());
         basicItem(ModItems.RADISH.get());
+        basicItem(ModItems.RADISH_SEEDS.get());
         basicItem(ModItems.STARLIGHT_ASHES.get());
         basicItem(ModItems.FROSTFIRE_ICE.get());
-        basicItem(ModItems.CHISEL.get());
+        // Item properties
+        //basicItem(ModItems.CHISEL.get());
         basicItem(ModBlocks.BISMUTH_DOOR.asItem());
+        basicItem(ModItems.BAR_BRAWL_MUSIC_DISC.get());
 
         basicItem(ModItems.BISMUTH_HELMET.get());
         basicItem(ModItems.BISMUTH_CHESTPLATE.get());
@@ -36,6 +37,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.PHOENIX_SMITHING_TEMPLATE.get());
 
         basicItem(ModItems.BISMUTH_HORSE_ARMOR.get());
+
+        basicItem(ModItems.GOJI_BERRIES.get());
+
+        basicItem(ModBlocks.BLOODWOOD_SAPLING.asItem());
 
         buttonItem(ModBlocks.BISMUTH_BUTTON, ModBlocks.BISMUTH_BLOCK);
         fenceItem(ModBlocks.BISMUTH_FENCE, ModBlocks.BISMUTH_BLOCK);

@@ -10,7 +10,6 @@ import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 import net.phoenix492.testmod.TestMod;
 import net.phoenix492.testmod.block.ModBlocks;
 import net.phoenix492.testmod.item.ModItems;
-import org.apache.logging.log4j.core.config.plugins.util.ResolverUtil;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;

@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "phoenixtestmod:item/chisel"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "phoenixtestmod:used": 1
+      },
+      "model": "phoenixtestmod:item/chisel_used"
+    }
+  ]
+}

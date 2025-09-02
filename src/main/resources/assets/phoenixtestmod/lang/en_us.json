@@ -3,6 +3,7 @@
   "item.phoenixtestmod.raw_bismuth": "Raw Bismuth",
   "item.phoenixtestmod.chisel": "Chisel",
   "item.phoenixtestmod.radish": "Radish",
+  "item.phoenixtestmod.goji_berries": "Goji Berries",
   "item.phoenixtestmod.frostfire_ice": "Frostfire Ice",
   "item.phoenixtestmod.starlight_ashes": "Starlight Ashes",
 
@@ -12,6 +13,7 @@
   "item.phoenixtestmod.bismuth_shovel": "Bismuth Shovel",
   "item.phoenixtestmod.bismuth_hoe": "Bismuth Hoe",
   "item.phoenixtestmod.bismuth_hammer": "Bismuth Hammer",
+  "item.phoenixtestmod.kaupen_bow": "Kaupen Bow",
 
   "item.phoenixtestmod.bismuth_helmet": "Bismuth Helmet",
   "item.phoenixtestmod.bismuth_chestplate": "Bismuth Chestplate",
@@ -20,10 +22,21 @@
 
   "item.phoenixtestmod.bismuth_horse_armor": "Bismuth Horse Armor",
 
-  "item.phoenixtestmod.phoenix_armor_trim_smithing_template": "Bismuth Horse Armor",
+  "item.phoenixtestmod.phoenix_armor_trim_smithing_template": "Phoenix Armor Trim Smithing Template",
+
+  "item.phoenixtestmod.bar_brawl_music_disc": "Music Disc",
+  "item.phoenixtestmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
+  "item.minecraft.potion.effect.slimy_potion": "Slimy Potion",
+  "item.minecraft.splash_potion.effect.slimy_potion": "Slimy Potion",
+  "item.minecraft.lingering_potion.effect.slimy_potion": "Slimy Potion",
+
+  "item.phoenixtestmod.radish_seeds": "Radish Seeds",
 
   "block.phoenixtestmod.bismuth_block": "Block of Bismuth",
   "block.phoenixtestmod.bismuth_ore": "Bismuth Ore",
+  "block.phoenixtestmod.bismuth_nether_ore": "Bismuth Nether Ore",
+  "block.phoenixtestmod.bismuth_end_ore": "Bismuth End Ore",
   "block.phoenixtestmod.bismuth_deepslate_ore": "Bismuth Deepslate Ore",
   "block.phoenixtestmod.magic_block": "Magic Block",
   "block.phoenixtestmod.bismuth_stairs": "Bismuth Stairs",
@@ -36,6 +49,19 @@
   "block.phoenixtestmod.bismuth_door": "Bismuth Door",
   "block.phoenixtestmod.bismuth_trapdoor": "Bismuth Trapdoor",
   "block.phoenixtestmod.bismuth_lamp": "Bismuth Lamp",
+  "block.phoenixtestmod.radish_crop": "Radish Crop",
+  "block.phoenixtestmod.goji_berry_bush": "Goji Berry Bush",
+  "block.phoenixtestmod.bloodwood_log": "Bloodwood Log",
+  "block.phoenixtestmod.bloodwood_wood": "Bloodwood Wood",
+  "block.phoenixtestmod.stripped_bloodwood_log": "Stripped Bloodwood Log",
+  "block.phoenixtestmod.stripped_bloodwood_wood": "Stripped Bloodwood Wood",
+  "block.phoenixtestmod.bloodwood_leaves": "Bloodwood Leaves",
+  "block.phoenixtestmod.bloodwood_sapling": "Bloodwood Sapling",
+  "block.phoenixtestmod.bloodwood_planks": "Bloodwood Planks",
+
+  "effect.phoenixtestmod.slimy": "Slimy",
+
+  "enchantment.phoenixtestmod.lightning_striker": "Lightning Striker",
 
   "creativetab.phoenixtestmod.bismuth_items": "Bismuth Items",
   "creativetab.phoenixtestmod.bismuth_blocks": "Bismuth Blocks",

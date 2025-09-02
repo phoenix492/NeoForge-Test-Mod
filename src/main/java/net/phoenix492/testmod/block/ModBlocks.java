@@ -1,19 +1,27 @@
 package net.phoenix492.testmod.block;
 
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.phoenix492.testmod.TestMod;
-import net.phoenix492.testmod.block.custom.BismuthLampBlock;
-import net.phoenix492.testmod.block.custom.MagicBlock;
+import net.phoenix492.testmod.block.custom.*;
+import net.phoenix492.testmod.datagen.bootstrappers.worldgen.tree.ModTreeGrowers;
 import net.phoenix492.testmod.item.ModItems;
+import net.phoenix492.testmod.item.custom.ModFlammableRotatePillarBlock;
+import net.phoenix492.testmod.sound.ModSounds;
 
 import java.util.function.Supplier;
 
@@ -45,16 +53,38 @@ public class ModBlocks {
                     BlockBehaviour.Properties.of()
                             .strength(4f)
                             .requiresCorrectToolForDrops()
+                            .sound(SoundType.DEEPSLATE)
+            )
+    );
+
+    public static final DeferredBlock<Block> BISMUTH_NETHER_ORE = registerBlock(
+            "bismuth_nether_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 6),
+                    BlockBehaviour.Properties.of()
+                            .strength(4f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.NETHER_ORE)
+            )
+    );
+
+    public static final DeferredBlock<Block> BISMUTH_END_ORE = registerBlock(
+            "bismuth_end_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 6),
+                    BlockBehaviour.Properties.of()
+                            .strength(4f)
+                            .requiresCorrectToolForDrops()
                             .sound(SoundType.STONE)
             )
     );
+
+
 
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock(
             "magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of()
                         .strength(1f)
                         .noLootTable()
-                        .sound(SoundType.NETHERRACK)
+                        .sound(ModSounds.MAGIC_BLOCK_SOUNDS)
             )
     );
 
@@ -149,6 +179,80 @@ public class ModBlocks {
         )
     );
 
+    public static final DeferredBlock<Block> RADISH_CROP = BLOCKS.register(
+        "radish_crop",
+        () -> new RadishCropBlock((BlockBehaviour.Properties.ofFullCopy(Blocks.BEETROOTS)))
+    );
+
+    public static final DeferredBlock<Block> GOJI_BERRY_BUSH = BLOCKS.register(
+        "goji_berry_bush",
+        () -> new GojiBerryBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH))
+    );
+
+    public static final DeferredBlock<Block> BLOODWOOD_LOG = registerBlock(
+        "bloodwood_log",
+        () -> new ModFlammableRotatePillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG))
+    );
+
+    public static final DeferredBlock<Block> STRIPPED_BLOODWOOD_LOG = registerBlock(
+        "stripped_bloodwood_log",
+        () -> new ModFlammableRotatePillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG))
+    );
+
+    public static final DeferredBlock<Block> BLOODWOOD_WOOD = registerBlock(
+        "bloodwood_wood",
+        () -> new ModFlammableRotatePillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD))
+    );
+
+    public static final DeferredBlock<Block> STRIPPED_BLOODWOOD_WOOD = registerBlock(
+        "stripped_bloodwood_wood",
+        () -> new ModFlammableRotatePillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD))
+    );
+
+    public static final DeferredBlock<Block> BLOODWOOD_PLANKS = registerBlock(
+        "bloodwood_planks",
+        () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)) {
+            @Override
+            public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                return true;
+            }
+
+            @Override
+            public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                return 20;
+            }
+
+            @Override
+            public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                return 5;
+            }
+        }
+    );
+
+    public static final DeferredBlock<Block> BLOODWOOD_LEAVES = registerBlock(
+        "bloodwood_leaves",
+        () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)) {
+            @Override
+            public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                return true;
+            }
+
+            @Override
+            public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                return 60;
+            }
+
+            @Override
+            public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                return 30;
+            }
+        }
+    );
+
+    public static final DeferredBlock<Block> BLOODWOOD_SAPLING = registerBlock(
+        "bloodwood_sapling",
+        () -> new ModSaplingBlock(ModTreeGrowers.BLOODWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING), () -> Blocks.NETHERRACK)
+    );
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

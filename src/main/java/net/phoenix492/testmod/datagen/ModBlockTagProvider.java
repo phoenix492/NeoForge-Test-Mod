@@ -3,7 +3,6 @@ package net.phoenix492.testmod.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.phoenix492.testmod.TestMod;
@@ -90,6 +89,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTagKeys.Blocks.INCORRECT_FOR_BISMUTH_TOOL)
             .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
             .remove(ModTagKeys.Blocks.NEEDS_BISMUTH_TOOL);
+
+        tag(BlockTags.LOGS_THAT_BURN)
+            .add(ModBlocks.BLOODWOOD_LOG.get())
+            .add(ModBlocks.BLOODWOOD_WOOD.get())
+            .add(ModBlocks.STRIPPED_BLOODWOOD_LOG.get())
+            .add(ModBlocks.STRIPPED_BLOODWOOD_WOOD.get());
     }
 
 }

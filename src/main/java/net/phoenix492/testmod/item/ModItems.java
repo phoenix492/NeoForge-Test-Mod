@@ -8,14 +8,15 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.phoenix492.testmod.TestMod;
+import net.phoenix492.testmod.block.ModBlocks;
 import net.phoenix492.testmod.block.custom.FuelItem;
 import net.phoenix492.testmod.item.custom.ChiselItem;
 import net.phoenix492.testmod.item.custom.HammerItem;
 import net.phoenix492.testmod.item.custom.ModArmorItem;
 import net.phoenix492.testmod.item.custom.ModFoodProperties;
+import net.phoenix492.testmod.sound.ModSounds;
 
 import java.util.List;
-import java.util.Locale;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(TestMod.MODID);
@@ -115,6 +116,26 @@ public class ModItems {
     public static final DeferredItem<Item> PHOENIX_SMITHING_TEMPLATE = ITEMS.register(
         "phoenix_armor_trim_smithing_template",
         () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(TestMod.MODID, "phoenix"))
+    );
+
+    public static final DeferredItem<Item> KAUPEN_BOW = ITEMS.register(
+        "kaupen_bow",
+        () -> new BowItem(new Item.Properties().durability(500))
+    );
+
+    public static final DeferredItem<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register(
+        "bar_brawl_music_disc",
+        () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).stacksTo(1))
+    );
+
+    public static final DeferredItem<Item> RADISH_SEEDS = ITEMS.register(
+        "radish_seeds",
+        () -> new ItemNameBlockItem(ModBlocks.RADISH_CROP.get(), new Item.Properties())
+    );
+
+    public static final DeferredItem<Item> GOJI_BERRIES = ITEMS.register(
+        "goji_berries",
+        () -> new ItemNameBlockItem(ModBlocks.GOJI_BERRY_BUSH.get(), new Item.Properties().food(ModFoodProperties.GOJI_BERRIES))
     );
 
 
