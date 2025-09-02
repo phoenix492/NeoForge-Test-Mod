@@ -16,7 +16,6 @@ public class ModClientEvents {
             float fovModifier = 1f;
             int ticksUsingItem = event.getPlayer().getTicksUsingItem();
 
-            // TODO: Switch out magic number for server's tick-rate
             float deltaTicks = (float) ticksUsingItem / 20f;
             if (deltaTicks > 1f) {
                 deltaTicks = 1f;
