@@ -53,6 +53,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.BISMUTH_AXE.get());
         handheldItem(ModItems.BISMUTH_HAMMER.get());
 
+        withExistingParent(ModItems.GECKO_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
     public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {

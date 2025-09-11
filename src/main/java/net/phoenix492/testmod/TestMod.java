@@ -17,6 +17,7 @@ import net.phoenix492.testmod.block.ModBlocks;
 import net.phoenix492.testmod.component.ModDataComponents;
 import net.phoenix492.testmod.effect.ModEffects;
 import net.phoenix492.testmod.enchantment.ModEnchantmentEffects;
+import net.phoenix492.testmod.entity.ModEntities;
 import net.phoenix492.testmod.item.ModCreativeModeTabs;
 import net.phoenix492.testmod.item.ModItems;
 import net.phoenix492.testmod.potion.ModPotions;
@@ -51,6 +52,7 @@ public class TestMod {
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
         ModEnchantmentEffects.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

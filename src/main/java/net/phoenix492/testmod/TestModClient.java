@@ -1,5 +1,6 @@
 package net.phoenix492.testmod;
 
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -8,6 +9,8 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
+import net.phoenix492.testmod.entity.ModEntities;
+import net.phoenix492.testmod.entity.client.GeckoRenderer;
 import net.phoenix492.testmod.util.ModItemProperties;
 
 // This class will not load on dedicated servers. Accessing client side code from here is safe.
@@ -25,5 +28,6 @@ public class TestModClient {
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
         ModItemProperties.addCustomItemProperties();
+        EntityRenderers.register(ModEntities.GECKO.get(), GeckoRenderer::new);
     }
 }

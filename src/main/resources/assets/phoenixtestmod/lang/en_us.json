@@ -33,6 +33,8 @@
 
   "item.phoenixtestmod.radish_seeds": "Radish Seeds",
 
+  "item.phoenixtestmod.gecko_spawn_egg": "Gecko Spawn Egg",
+
   "block.phoenixtestmod.bismuth_block": "Block of Bismuth",
   "block.phoenixtestmod.bismuth_ore": "Bismuth Ore",
   "block.phoenixtestmod.bismuth_nether_ore": "Bismuth Nether Ore",
@@ -72,5 +74,7 @@
   "tooltip.phoenixtestmod.radish_tooltip": "Chance of Health Boost on consumption!",
 
   "trim_pattern.phoenixtestmod.phoenix": "Phoenix Armor Trim",
-  "trim_material.phoenixtestmod.bismuth": "Bismuth Material"
+  "trim_material.phoenixtestmod.bismuth": "Bismuth Material",
+
+  "entity.phoenixtestmod.gecko": "Gecko"
 }
